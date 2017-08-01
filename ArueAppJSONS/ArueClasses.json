@@ -1,0 +1,27 @@
+{
+	"Galinha" : [
+      {
+		"name" : "GimnasioFitness",
+        "location": "calle francisco paino 9, Madrid",
+        "days" : "L-M",
+        "startTime" : "21:30",
+        "length" : "1:30"
+      },
+	  {
+		"name" : "Fitness4All",
+        "location": "calle Sevilla, Pozule",
+        "days" : "M-J",
+        "startTime" : "20:30",
+        "length" : "1:30"
+      }
+    ],
+  "Sandalha" : [
+      {
+		"name" : "Stradavanza",
+        "location": "Calle Dolores Coca 18, Madrid",
+        "days" : "L-M",
+        "startTime" : "20:30",
+        "length" : "1:30"
+      }
+    ]
+}

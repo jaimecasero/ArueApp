@@ -1,0 +1,27 @@
+https://www.googleapis.com/drive/v2/files/0B1MWdYXZIEzoekk3a0preDRQRmc?alt=media
+
+
+https://drive.google.com/file/d/0B1MWdYXZIEzoekk3a0preDRQRmc/view?usp=sharing
+
+kickScpores -> https://drive.google.com/file/d/0B1MWdYXZIEzoNElpREt3b2M1cHM/view?usp=sharing
+
+https://www.googleapis.com/drive/v2/files/0B1MWdYXZIEzoNElpREt3b2M1cHM?key=AIzaSyBRnRVPiQhjpRo_PCZoPNBaOaJYZoBt5XE&alt=media
+
+https://www.googleapis.com/drive/v3/files/0B1MWdYXZIEzoNElpREt3b2M1cHM?key=AIzaSyBRnRVPiQhjpRo_PCZoPNBaOaJYZoBt5XE&alt=media
+
+https://www.googleapis.com/upload/drive/v2/files/0B1MWdYXZIEzoNElpREt3b2M1cHM?key=AIzaSyBRnRVPiQhjpRo_PCZoPNBaOaJYZoBt5XE&uploadType=media
+
+
+events -> https://drive.google.com/file/d/0B1MWdYXZIEzoQTl5ZEJGVGxicmM/view?usp=sharing
+          renderSparator ={this._renderSeparator}
+		  
+		        kicksDS: ds.cloneWithRows(kicksData),
+				
+				
+				
+lyrics -> https://drive.google.com/file/d/0B1MWdYXZIEzoRUo1MVJhd0o5VmM/view?usp=sharing
+
+classes -> https://drive.google.com/file/d/0B1MWdYXZIEzoc21RQ21DZ19WM0E/view?usp=sharing
+
+
+mestres -> https://drive.google.com/file/d/0B1MWdYXZIEzock5RdzZwV09tY0E/view?usp=sharing

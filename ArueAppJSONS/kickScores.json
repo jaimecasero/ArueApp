@@ -1,0 +1,62 @@
+{
+	"Armada" : [
+	  {
+		"kicker": "Mini",
+		"kickScore" : 97,
+		"kickData": []
+	  },
+	  {
+		"kicker": "Montaña",
+		"kickScore" : 95,
+		"kickData": []
+	  }
+	],
+	"MeiaLuaCompasso" : [
+	  {
+		"kicker": "Mini",
+		"kickScore" : 97,
+		"kickData": []
+	  },
+	  {
+		"kicker": "Montaña",
+		"kickScore" : 95,
+		"kickData": []
+	  }
+	],
+	"Martelo" : [
+		  {
+			"kicker": "Mini",
+			"kickScore" : 97,
+			"kickData": []
+		  },
+		  {
+			"kicker": "Montaña",
+			"kickScore" : 95,
+			"kickData": []
+		  }
+		],
+	"MarteloRodado" : [
+		  {
+			"kicker": "Mini",
+			"kickScore" : 97,
+			"kickData": []
+		  },
+		  {
+			"kicker": "Montaña",
+			"kickScore" : 95,
+			"kickData": []
+		  }
+		],
+	"Queixada" : [
+		  {
+			"kicker": "Mini",
+			"kickScore" : 97,
+			"kickData": []
+		  },
+		  {
+			"kicker": "Montaña",
+			"kickScore" : 95,
+			"kickData": []
+		  }
+		]			
+}
