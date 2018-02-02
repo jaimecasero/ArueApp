@@ -74,11 +74,11 @@ render() {
               />
           </TouchableHighlight>
           <TouchableHighlight onPress={() => {
-            Linking.openURL('geo:37.484847,-122.148386'); }
+            Linking.openURL('geo:0,0?q=' + this.props.location); }
           }>
             <Image source={require('./maps_android.png')}
                   style={styles.classIcon}
-                  accessibilityLabel={this.props.location.street} />
+                  accessibilityLabel={this.props.location} />
           </TouchableHighlight>
         </View>
 
