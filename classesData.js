@@ -1,67 +1,101 @@
-export default classData = [
-  {
-    "Name": "Galinha",
-    "location": {
-      "street": "calle francisco paino 9",
-      "city": "Madrid",
-      "state": "Madrid",
-      "postcode": 60649,
-      "country" : "ES",
-      "googleMapURL" : ""
-    },
-    "classSchedules" : [
-      {
-        "location": "calle francisco paino 9, Madrid",
-        "days" : "L-M",
-        "Monday" : "true",
-        "Tuesday" : "false",
-        "Wednesday" : "true",
-        "Thrusday" : "false",
-        "Friday" : "false",
-        "startTime" : "21:30",
-        "length" : "1:30"
-      }
-    ],
-    "email": "galinha@example.com",
-    "picture": {
-      "large": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/11150407_10152721426695178_3682574591017017889_n.jpg?oh=09ac776c98db1596b2a37748e973ceac&oe=59233A26",
-      "medium": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/11150407_10152721426695178_3682574591017017889_n.jpg?oh=09ac776c98db1596b2a37748e973ceac&oe=59233A26",
-      "thumbnail": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/11150407_10152721426695178_3682574591017017889_n.jpg?oh=09ac776c98db1596b2a37748e973ceac&oe=59233A26"
-    },
-  },
-  {
-    "Name": "Sandalha",
-    "location": {
-      "street": "carabanchel",
-      "city": "Madrid",
-      "state": "Madrid",
-      "postcode": 60649,
-      "country" : "ES",
-      "googleMapURL" : ""
-    },
-    "classSchedules" : [
-      {
-        "location": {
-          "street": "carabanchel",
-          "city": "Madrid",
-          "state": "Madrid",
-          "postcode": 60649
-        },
-        "days" : "L-M",
-        "Monday" : "true",
-        "Tuesday" : "false",
-        "Wednesday" : "true",
-        "Thrusday" : "false",
-        "Friday" : "false",
-        "startTime" : "20:30",
-        "length" : "1:30"
-      }
-    ],
-    "email": "Sandalha@example.com",
-    "picture": {
-      "large": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13087751_1048593481875202_8928707609071729107_n.jpg?oh=cdcf5f9e0f3d14e910896486a0537e14&oe=591C304A",
-      "medium": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13087751_1048593481875202_8928707609071729107_n.jpg?oh=cdcf5f9e0f3d14e910896486a0537e14&oe=591C304A",
-      "thumbnail": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13087751_1048593481875202_8928707609071729107_n.jpg?oh=cdcf5f9e0f3d14e910896486a0537e14&oe=591C304A"
-    },
-  }
-];
+export default classData = {
+                           	"Galinha": [{
+                           			"name": "F19 BASIC FITNESS",
+                           			"location": "calle francisco paino 9, Madrid",
+                           			"days": "L-M",
+                           			"startTime": "21:30",
+                           			"length": "1:15"
+                           		}, {
+                           			"name": "Fitness4All",
+                           			"location": "calle Sevilla, Pozuelo de Alarcón",
+                           			"days": "M-J",
+                           			"startTime": "20:30",
+                           			"length": "1"
+                           		}
+                           	],
+                           	"Sandalha": [{
+                           			"name": "Stradavanza",
+                           			"location": "Calle Dolores Coca 18, Madrid",
+                           			"days": "L-M",
+                           			"startTime": "20:30",
+                           			"length": "1:30"
+                           		}
+                           	],
+                           	"Bananeira": [{
+                           			"name": "capoeira",
+                           			"location": "C/Reyes 6, Ciudad Real, España",
+                           			"days": "M J",
+                           			"startTime": "21",
+                           			"length": "1"
+                           		}
+                           	],
+                           	"Catatau": [{
+                           			"name": "Gimnasio Okinawa",
+                           			"location": "Calle Cabo de San Vicente, 16, 28924 Alcorcón",
+                           			"days": "L X",
+                           			"startTime": "21:30",
+                           			"length": "1"
+                           		}
+                           	],
+                           	"Boa Fonte": [{
+                           			"name": "NomadansNiños",
+                           			"location": "C/ Alemania 135, Toledo",
+                           			"days": "L X",
+                           			"startTime": "17:15",
+                           			"length": "1"
+                           		}, {
+                           			"name": "NomadansAdultoss",
+                           			"location": "C/ Alemania 135, Toledo",
+                           			"days": "M J",
+                           			"startTime": "21:15",
+                           			"length": "1"
+                           		}
+                           	],
+                           	"Biriba": [{
+                           			"name": "Getafe",
+                           			"location": "Plaza de las Provincias S/N, Getafe ",
+                           			"days": "M J S",
+                           			"startTime": "20:00",
+                           			"length": "1"
+                           		}
+                           	],
+                           	"Rapunzel": [{
+                           			"name": "Denmark",
+                           			"location": "Tagensbo Skole, Magistervej 4, Nordvest",
+                           			"days": "M J",
+                           			"startTime": "16:00",
+                           			"length": "2"
+                           		}
+                           	],
+                           	"Bengala": [{
+                           			"name": "Gimnasio Go Fit",
+                           			"location": "Avenida de los Piconeros S/N",
+                           			"days": "L X V",
+                           			"startTime": "21:15",
+                           			"length": "2"
+                           		}
+                           	],
+                           	"Coelho": [{
+                           			"name": "Edificio Uribarri (Deusto)",
+                           			"location": "Calle Luzarra 14-16, planta 3-1",
+                           			"days": "X V",
+                           			"startTime": "19:15",
+                           			"length": "1:15"
+                           		}
+                           	],
+                           	"Paraná": [{
+                           			"name": "NEW CAR-Niños",
+                           			"location": "Avda. Jerez Perchet 21 , Malaga",
+                           			"days": "M J",
+                           			"startTime": "18:30",
+                           			"length": "1:15"
+                           		}, {
+                           			"name": "NEW CAR-Adultos",
+                           			"location": "Avda. Jerez Perchet 21 , Malaga",
+                           			"days": "M J",
+                           			"startTime": "21:30",
+                           			"length": "1"
+                           		}
+                           	]
+
+                           };
