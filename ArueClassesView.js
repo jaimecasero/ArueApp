@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ListView, TouchableHighlight, Image, AsyncStorage} from 'react-native';
+import { View, Text, StyleSheet, ListView,Button, TouchableHighlight,Linking, Image, AsyncStorage} from 'react-native';
 import ClassRow from './ClassRow';
+import classData from './classesData.js'
+import mestresData from './mestresData.js'
 
 const styles = StyleSheet.create({
   container: {
@@ -44,7 +46,8 @@ export default class ArueClassesView extends Component {
 
   componentDidMount() {
     console.disableYellowBox = false;
-    this.retrieveMestres();
+    this.loadMestres(mestresData);
+    this.loadClasses(classData);
   }
 
   retrieveMestres() {
@@ -57,19 +60,17 @@ export default class ArueClassesView extends Component {
     }
   }
 
-  loadMestres(error,data) {
-    console.warn("localMestres:" + data);
+  loadMestres(data) {
+    console.warn("localMestres:", data);
     if (data != null) {
-    console.error("localMestres:" + data);
-      var parsedMestres = JSON.parse(data);
       this.setState({
-         mestres:parsedMestres,
+         mestres:data,
       });
-      this.retrieveClasses();
     } else {
         this.updateMestres();
     }
   }
+
   afterSet(error) {
     console.warn(error);
   }
@@ -84,23 +85,22 @@ export default class ArueClassesView extends Component {
     }
   }
 
-  loadClasses(error, data) {
-    console.error("localClasses:" + data);
+  loadClasses(data) {
+    console.warn("localClasses:", data);
     if (data != null) {
-        var parsedClasses = JSON.parse(data);
         const ds = new ListView.DataSource({
           rowHasChanged: (r1, r2) => r1 !== r2,
           sectionHeaderHasChanged: (s1, s2) => s1 !== s2
         });
 
       this.setState({
-         classes: parsedClasses,
-         eventDS: ds.cloneWithRowsAndSections(parsedClasses),
+         classes: data,
+         eventDS: ds.cloneWithRowsAndSections(data),
          urlRetrieved : true
       });
+     } else {
+        this.updateMestres();
      }
-     this.updateMestres();
-
   }
 
   updateMestres() {
@@ -121,7 +121,6 @@ export default class ArueClassesView extends Component {
         }
       }
     ).then((responseJson) => {
-      //console.warn(JSON.stringify(responseJson));
       AsyncStorage.setItem(MESTRES_KEY, JSON.stringify(responseJson), this.afterSet());
       this.setState({
          mestres:responseJson,
@@ -148,7 +147,6 @@ export default class ArueClassesView extends Component {
         }
       }
     ).then((responseJson) => {
-      //console.warn(JSON.stringify(responseJson));
       AsyncStorage.mergeItem(CLASSES_KEY, JSON.stringify(responseJson));
       this.setState({
          classes:responseJson,
@@ -166,6 +164,24 @@ export default class ArueClassesView extends Component {
         <Text style={styles.text}>
           {`${category}`}
         </Text>
+        <TouchableHighlight onPress={() => {
+            Linking.openURL('mailto:' + this.state.mestres[category].email + '?subject=Info de clases:' + this.props.class.name).catch(err => console.error('Configura una cuenta de correo', err)); }
+          }>
+          <View style={styles.container}>
+            <Image source={require('./mail_android.png')}
+              style={styles.classIcon}
+              accessibilityLabel={"Send email to mestre"}
+              />
+            </View>
+          </TouchableHighlight>
+              <TouchableHighlight onPress={() => {
+                Linking.openURL('tel:' + this.state.mestres[category].mobile); }
+              }>
+                <Image source={require('./android-call-icon-11.jpg')}
+                  style={styles.classIcon}
+                  accessibilityLabel='Call mestre'
+                  />
+              </TouchableHighlight>
       </View>
     )
   }

@@ -35,16 +35,7 @@ export default class ClassRow extends Component {
         <Text style={styles.text}>
           {`${this.props.class.name} ${this.props.class.days} ${this.props.class.startTime}`}
         </Text>
-        <TouchableHighlight onPress={() => {
-            Linking.openURL('mailto:' + this.props.mestre.email + '?subject=Info de clases:' + this.props.class.name).catch(err => console.error('Configura una cuenta de correo', err)); }
-          }>
-          <View style={styles.container}>
-            <Image source={require('./mail_android.png')}
-              style={styles.classIcon}
-              accessibilityLabel={"Send email to mestre"}
-              />
-            </View>
-          </TouchableHighlight>
+
           <TouchableHighlight onPress={() => {
             Linking.openURL('geo:0,0?q=' + this.props.class.location); }
           }>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image, Button, TouchableHighlight, Linking, Modal } from 'react-native';
+import { View, Text, StyleSheet, Image, Button,ListView, TouchableHighlight, Linking, Modal } from 'react-native';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
 export default class EventRow extends Component {
   constructor(props) {
     super(props);
-
+    console.warn("rowProps:", props);
     this.state = {
        modalVisible: false,
     };
@@ -51,73 +52,18 @@ export default class EventRow extends Component {
 render() {
   return (
   <View style={styles.container}>
-    <Modal animationType={"slide"} transparent={false} visible={this.state.modalVisible} onRequestClose={() => {alert("Modal has been closed.")}}>
-      <View>
-        <View style={styles.modalHeader}>
-          <TouchableHighlight onPress={() => {
-          this.setModalVisible(!this.state.modalVisible); }
-          }>
-            <Image source={require('./back_orange.png')}
-              style={styles.classIcon}
-              accessibilityLabel="click to go back"
-              />
-          </TouchableHighlight>
-          <Text style={styles.modalHeaderText}>
-            {`${this.props.Name}`}
-          </Text>
-          <TouchableHighlight onPress={() => {
-            Linking.openURL('mailto:' + this.props.email + '?subject=class info'); }
-          }>
-            <Image source={require('./mail_android.png')}
-              style={styles.classIcon}
-              accessibilityLabel={this.props.email}
-              />
-          </TouchableHighlight>
-          <TouchableHighlight onPress={() => {
-            Linking.openURL('geo:0,0?q=' + this.props.location); }
-          }>
-            <Image source={require('./maps_android.png')}
-                  style={styles.classIcon}
-                  accessibilityLabel={this.props.location} />
-          </TouchableHighlight>
-        </View>
-
-        <Text style={styles.text}>
-          {`${this.props.eventSchedule[0].dateStart}`}
-        </Text>
-
-        <Image source={{ uri: this.props.picture.large}} style={{width: 300, height: 400}} />
-
-        </View>
-   </Modal>
-
-  <TouchableHighlight onPress={() => {
-    this.setModalVisible(true); }
-  }>
-    <Image source={{ uri: this.props.picture.thumbnail}} style={styles.photo} />
-  </TouchableHighlight>
 
   <Text style={styles.text}>
-    {`${this.props.Name}`}
+   {`${this.props.date}`} {`${this.props.time}`} {`${this.props.title}`}
   </Text>
 
-  <TouchableHighlight onPress={() => {
-    Linking.openURL('mailto:' + this.props.email + '?subject=class info'); }
-  }>
-  <View style={styles.container}>
-    <Image source={require('./mail_android.png')}
-      style={styles.classIcon}
-      accessibilityLabel={this.props.email}
-      />
-    </View>
-  </TouchableHighlight>
 
   <TouchableHighlight onPress={() => {
-    Linking.openURL('geo:37.484847,-122.148386'); }
+    Linking.openURL('geo:0,0?q=' + this.props.location); }
   }>
     <Image source={require('./maps_android.png')}
           style={styles.classIcon}
-          accessibilityLabel={this.props.location.street} />
+          accessibilityLabel={this.props.location} />
   </TouchableHighlight>
 
   </View>);
