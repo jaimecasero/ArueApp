@@ -30,9 +30,6 @@ export default class ArueApp extends Component {
     <ScrollView tabLabel="Letras" style={styles.tabView}>
       <ArueLyricsView></ArueLyricsView>
     </ScrollView>
-    <ScrollView tabLabel="ArueKick" style={styles.tabView}>
-        <ArueKick></ArueKick>
-    </ScrollView>
 </ScrollableTabView>;
 
   }
