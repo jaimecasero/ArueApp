@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ListView, TouchableHighlight, AsyncStorage} from 'react-native';
 import LyricRow from './LyricRow';
+import lyricsData from './LyricsData.js';
 
 const styles = StyleSheet.create({
   container: {
@@ -39,7 +40,7 @@ export default class ArueLyricsView extends Component {
   }
 
   componentDidMount() {
-    this.retrieveLyrics();
+    this.loadLyrics(lyricsData);
   }
 
   retrieveLyrics() {
@@ -53,7 +54,7 @@ export default class ArueLyricsView extends Component {
   }
 
   loadLyrics(data) {
-    console.warn("loadLyrics:" + data);
+    console.warn("loadLyrics:", data);
     if (data != null) {
         const ds = new ListView.DataSource(
           {
@@ -61,10 +62,9 @@ export default class ArueLyricsView extends Component {
           }
         );
       this.setState({
-         lyricsDS: ds.cloneWithRows(responseJson),
+         lyricsDS: ds.cloneWithRows(data),
          urlRetrieved : true
       });
-      this.updateLyrics();
     } else {
       this.updateLyrics();
     }

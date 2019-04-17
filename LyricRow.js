@@ -91,10 +91,18 @@ export default class LyricRow extends Component {
     }
   }
 
+_closeModal() {
+    this.setState({
+        modalVisible: false
+    });
+}
+
+
+
 render() {
   return (
   <View style={styles.container}>
-  <Modal animationType={"slide"} transparent={false} visible={this.state.modalVisible} onRequestClose={() => {alert("Modal has been closed.")}}>
+  <Modal animationType={"slide"} transparent={false} visible={this.state.modalVisible} onRequestClose={() => { this.setState({modalVisible: false}); } } >
     <View>
       <View style={styles.modalHeader}>
         <TouchableHighlight onPress={() => {
@@ -106,7 +114,7 @@ render() {
             />
         </TouchableHighlight>
         <Text style={styles.modalHeaderText}>
-          {`${this.props.Name}-${this.props.Toque}`}
+          {`${this.props.Name}`}
         </Text>
         </View>
       <ListView
@@ -134,13 +142,6 @@ render() {
 
 
 
-  <TouchableHighlight onPress={() => {
-    Linking.openURL(this.props.YoutubeLink); }
-  }>
-    <Image source={require('./YouTube-icon.png')}
-          style={styles.classIcon}
-          accessibilityLabel="Link to Youtube song"/>
-  </TouchableHighlight>
   </View>);
   }
 
