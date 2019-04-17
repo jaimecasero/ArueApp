@@ -11,7 +11,7 @@ import ArueKick from './ArueKick';
 import ArueLyricsView from './ArueLyricsView';
 import ArueClassesView from './ArueClassesView';
 
-export default class ArueApp extends Component {
+export default class ArueMadrid extends Component {
   constructor(props) {
     super(props);
  }
@@ -70,4 +70,4 @@ const styles = StyleSheet.create({
 },
 });
 
-AppRegistry.registerComponent('ArueApp', () => ArueApp);
+AppRegistry.registerComponent('ArueMadrid', () => ArueMadrid);

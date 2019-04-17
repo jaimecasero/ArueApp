@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-export default class ArueApp extends Component {
+export default class ArueMadrid extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ArueApp', () => ArueApp);
+AppRegistry.registerComponent('ArueMadrid', () => ArueMadrid);

@@ -1,4 +1,4 @@
-package com.arueapp;
+package com.aruemadrid;
 
 import android.app.Application;
 import android.util.Log;
