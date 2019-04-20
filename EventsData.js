@@ -8,8 +8,14 @@ export default eventsData = {
             "location": "CENTRO DEPORTIVO LAS CRUCES,Av. de los Poblados, 72, 28044 Madrid"
         },
         {
+            "date": "26/04",
+            "time": "[21:00]",
+            "title": "Roda",
+            "location": "CENTRO DEPORTIVO LAS CRUCES,Av. de los Poblados, 72, 28044 Madrid"
+        },
+        {
             "date": "27/04",
-            "time": "[09:30,12:00]",
+            "time": "[09:30,11:00]",
             "title": "Curso Kall y Ratto",
             "location": "CENTRO DEPORTIVO LAS CRUCES,Av. de los Poblados, 72, 28044 Madrid"
         },
@@ -41,6 +47,12 @@ export default eventsData = {
             "date": "27/04",
             "time": "[13:00,14:00]",
             "title": "Roda",
+            "location": "CENTRO DEPORTIVO LAS CRUCES,Av. de los Poblados, 72, 28044 Madrid"
+        },
+        {
+            "date": "27/04",
+            "time": "[14:00,17:00]",
+            "title": "Comida",
             "location": "CENTRO DEPORTIVO LAS CRUCES,Av. de los Poblados, 72, 28044 Madrid"
         },
         {

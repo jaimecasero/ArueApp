@@ -165,7 +165,7 @@ export default class ArueClassesView extends Component {
           {`${category}`}
         </Text>
         <TouchableHighlight onPress={() => {
-            Linking.openURL('mailto:' + this.state.mestres[category].email + '?subject=Info de clases:' + this.props.class.name).catch(err => console.error('Configura una cuenta de correo', err)); }
+            Linking.openURL('mailto:' + this.state.mestres[category].email + '?subject=Info de clases').catch(err => console.error('Configura una cuenta de correo', err)); }
           }>
           <View style={styles.container}>
             <Image source={require('./mail_android.png')}

@@ -29,16 +29,16 @@ export default lyricsData = [
                                                                 "chorus" : false
                                                               },      {
                                                                 "text" : "Hoje levante as mãos",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "e não deixe de agradecer",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "Deus escute a nossa prece",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "que a gente carece",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "aqui do seu poder",
                                                                 "chorus" : true
@@ -261,13 +261,13 @@ export default lyricsData = [
                                                             "verses" : [
                                                               {
                                                                 "text" : "A vida está cheia de barreiras",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "mas eu ando sempre de pé no chão",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "não tenho medo, vou de qualquer maneira",
-                                                                "chorus" : false
+                                                                "chorus" : true
                                                               },      {
                                                                 "text" : "cada dor me deu mais compreensão",
                                                                 "chorus" : true
@@ -370,10 +370,10 @@ export default lyricsData = [
                                                                                               "chorus" : false
                                                                                             },      {
                                                                                               "text" : "E quando o mestre chegar",
-                                                                                              "chorus" : true
+                                                                                              "chorus" : false
                                                                                             },      {
                                                                                               "text" : "O caldeirão vai ferver",
-                                                                                              "chorus" : true
+                                                                                              "chorus" : false
                                                                                             },      {
                                                                                               "text" : "Le lê lê lê le",
                                                                                               "chorus" : true
@@ -388,6 +388,9 @@ export default lyricsData = [
                                                                                               "chorus" : false
                                                                                             },      {
                                                                                               "text" : "E assim sempre vai ser",
+                                                                                              "chorus" : false
+                                                                                            },      {
+                                                                                              "text" : "Está marcado em minha alma",
                                                                                               "chorus" : false
                                                                                             },      {
                                                                                               "text" : "A ferro e fogo Aruê",
